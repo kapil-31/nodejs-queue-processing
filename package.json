@@ -1,24 +1,23 @@
 {
-  "name": "node-queue",
+  "name": "pg-node-queue",
   "version": "1.0.0",
   "description": "A Postgres-backed job queue engine with leasing, retries, and idempotent side effects.",
   "author": "kapil karki",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-
   "bin": {
-    "node-queue":"dist/cli/index.js"
+    "node-queue": "dist/cli/index.js"
   },
-
   "files": [
     "dist"
   ],
-
   "scripts": {
-    "build":"tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+
   },
-   "keywords": [
+  "keywords": [
     "queue",
     "job-queue",
     "postgres",
@@ -26,11 +25,10 @@
     "distributed-systems",
     "worker"
   ],
-  
   "dependencies": {
     "pg": "^8.16.3"
   },
-   "devDependencies": {
+  "devDependencies": {
     "typescript": "^5.9.3",
     "ts-node": "^10.9.2",
     "@types/node": "^25.0.3",
