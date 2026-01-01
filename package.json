@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate":"ts-node ./src/db/migrate.ts",
-    "server": "ts-node ./src/server.ts"
+    "server": "ts-node ./src/server.ts",
+    "worker": "ts-node ./src/worker/index.ts"
   },
   "keywords": [],
   "author": "kapil karki",

@@ -22,6 +22,8 @@ async function migrate(){
 
         last_error TEXT,
 
+        next_run_at TIMESTAMP DEFAULT NOW(),
+
         created_at TIMESTAMP DEFAULT NOW(),
         updated_at TIMESTAMP DEFAULT NOW()
         )`);
