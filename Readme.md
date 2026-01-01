@@ -73,4 +73,4 @@ Reaper / Recovery
 
 
 
-> 🚧 **Work in Progress** — Actively being developed to explore distributed job execution, retries, leasing, and idempotent side effects.
+> 🚧 **Work in Progress** — Actively  being developed to explore distributed job execution, retries, leasing, and idempotent side effects.
